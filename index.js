@@ -1,30 +1,25 @@
 'use strict';
 
-  function getRandomIntInRange(min, max) {
+function getRandomIntInRange(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min; 
     } 
 
-
-  function getRandomString(length) {
-    const randomChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+function getRandomString(length) {
     let result = '';
+    const charactersLength = characters.length;
     for ( let i = 0; i < length; i++ ) {
-        result += randomChars.charAt(Math.floor(Math.random() * randomChars.length));
-     return result;
-    }}
-   
-    
-  document.getElementById('btn').addEventListener("click", function(){
-    console.log(getRandomString(4));
-    console.log(getRandomIntInRange(10, 1000)); 
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }   
+    return result;
+}
 
+let randomBandName = document.getElementById('btn').addEventListener("click", () => {
+    console.log(getRandomString(3) + getRandomIntInRange(0, 1000));
+    document.getElementById('bandname').innerHTML = getRandomString(3) + getRandomIntInRange(0, 1000);
 });
 
+document.getElementById('bandname').innerHTML =  "2";
 
- //const bandnumber = ;
-  
- // const bandname = document.querySelector(".bandname");
-
- // bandname.innerText=;
 
 
