@@ -15,11 +15,7 @@ function getRandomString(length) {
 }
 
 let randomBandName = document.getElementById('btn').addEventListener("click", () => {
-    console.log(getRandomString(3) + getRandomIntInRange(0, 1000));
     document.getElementById('bandname').innerHTML = getRandomString(3) + getRandomIntInRange(0, 1000);
 });
-
-document.getElementById('bandname').innerHTML =  "2";
-
 
 
