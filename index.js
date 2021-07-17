@@ -15,7 +15,7 @@ function getRandomString(length) {
 }
 
 let randomBandName = document.getElementById('btn').addEventListener("click", () => {
-    document.getElementById('bandname').innerHTML = getRandomString(3) + getRandomIntInRange(0, 1000);
+    document.getElementById('bandname').innerHTML = getRandomString(2) + getRandomIntInRange(0, 1000);
 });
 
-
+// идеи - две буквы или три, чтобы выдавало 
