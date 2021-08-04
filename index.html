@@ -82,8 +82,63 @@
                405047
            </address>
         </footer>
+
+
+        <form action="#" autocomplete="on" method="POST" target="blanc">
+            <fieldset>
+                <legend>
+                    Ваши данные
+                </legend>
+                <label for="user-name">Insert you name</label>
+                <input id="user-name" type="text" placeholder="f.i Regina" 
+                minlength="2" required autocomplete="on" autofocus
+                name="user-name" value="Regina">
+                <br>
+
+                <label for="">Your phonenumber, please. Why? Why not </label>
+                <input type="tel" placeholder="+372 55 55 555"
+                pattern="[0-9]{5,10}">
+                <!--http://htmlbook.ru/html/input/pattern-->
+
+                <label for="">Your e-mail</label>
+                <input type="email" required>
+
+                <label for="">Choose yor destiny</label> <br>
+
+                <label for="pizza">Pizza</label>
+                <input type="checkbox" id="pizza" name="food">
+                <label for="sushi">Sushi</label>
+                <input type="checkbox" id="sushi" name="food">
+                <br>
+                <label for="date">Birthday!</label>
+                <input type="date" name="date" id="date">
+                <br>
+                <label for="file">Your photo plz</label>
+                <input type="file" name="file" id="file" multiple>
+                <br>
+                <!-- <label for="pass">Your photo plz</label> -->
+                <!-- <input type="password" name="pass" id="pass"> -->
+                <br>
+                <input type="range" name="" id="">
+                
+                <label for="opinion">Your Humble Opinion</label>
+                <textarea name="" id="opinion" cols="15" rows="5"></textarea>
+                <!--  <select name="" id="" size="2"> можно multiple добавить для выбора одновремнно
+                    <option value="Moscow">Moscow</option>
+                    <option value="notMoscow" selected>Not Moscow</option>
+                    <option value="ok" disabled>ok</option>
+                </select> -->
+               
+                <input type="reset" value="Clear all">
+                <input type="submit" value="Send it to me">
+                <button type="submit">And once again</button>
+            </fieldset>
+            
+        </form>
     </container>
     
 
 </body>
 </html>
+
+
